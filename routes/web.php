@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\PublishedListingController;
 use App\Http\Controllers\FreeBookController;
+use App\Http\Controllers\SubscriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,9 +22,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/free-book', function () {
-    return view('free-book');
-});
+Route::get('/about', function () {return view('about');});
+Route::get('/services', function () {return view('services');});
+Route::get('/contact', function () {return view('contact');});
+
+Route::get('/free-book', function () {return view('free-book');});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -44,6 +47,7 @@ Route::post('/listings/publish', [ListingController::class, 'publish'])->name('l
 Route::post('/listings/unpublish', [ListingController::class, 'unpublish'])->name('listings.unpublish');
 Route::post('/free-book/get', [FreeBookController::class, 'store'])->name('free-book.store');
 Route::post('/free-book/download', [FreeBookController::class, 'download'])->name('free-book.download');
+Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe.store');
 Route::resource('listings', ListingController::class);
 
 Route::group(['prefix' => 'admin'], function () {

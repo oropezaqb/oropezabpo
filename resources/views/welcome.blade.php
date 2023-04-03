@@ -103,7 +103,7 @@
                 </svg>
                 <i class="bx bxl-dribbble"></i>
               </div>
-              <h4><a href="">Accounting</a></h4>
+              <h4><a href="https://calendly.com/oropezabpo/30min" onclick="return confirm('Do you want to book a FREE consultation meeting for this?');">Accounting</a></h4>
               <p>Preparation of Financial Statements and Management Reports including Financial Analyses</p>
             </div>
           </div>
@@ -116,7 +116,7 @@
                 </svg>
                 <i class="bx bx-file"></i>
               </div>
-              <h4><a href="">Tax Filing</a></h4>
+              <h4><a href="https://calendly.com/oropezabpo/30min" onclick="return confirm('Do you want to book a FREE consultation meeting for this?');">Tax Filing</a></h4>
               <p>These services include filing tax returns, tax payment, tax audit and consultancy services</p>
             </div>
           </div>
@@ -129,7 +129,7 @@
                 </svg>
                 <i class="bx bx-tachometer"></i>
               </div>
-              <h4><a href="">Payroll</a></h4>
+              <h4><a href="https://calendly.com/oropezabpo/30min" onclick="return confirm('Do you want to book a FREE consultation meeting for this?');">Payroll</a></h4>
               <p>Payroll and payslip computation and preparation plus SSS, Pag-IBIG, and PhilHealth services</p>
             </div>
           </div>
@@ -142,7 +142,7 @@
                 </svg>
                 <i class="bx bx-layer"></i>
               </div>
-              <h4><a href="">Marketing</a></h4>
+              <h4><a href="https://calendly.com/oropezabpo/30min" onclick="return confirm('Do you want to book a FREE consultation meeting for this?');">Digital Marketing</a></h4>
               <p>Increase online brand awareness, lead generation and social media management</p>
             </div>
           </div>
@@ -155,7 +155,7 @@
                 </svg>
                 <i class="bx bx-slideshow"></i>
               </div>
-              <h4><a href="">Web Design</a></h4>
+              <h4><a href="https://calendly.com/oropezabpo/30min" onclick="return confirm('Do you want to book a FREE consultation meeting for this?');">Web Design</a></h4>
               <p>Have your own business website to increase online presence and reach more audience.</p>
             </div>
           </div>
@@ -168,7 +168,7 @@
                 </svg>
                 <i class="bx bx-arch"></i>
               </div>
-              <h4><a href="">Business Registration</a></h4>
+              <h4><a href="https://calendly.com/oropezabpo/30min" onclick="return confirm('Do you want to book a FREE consultation meeting for this?');">Business Registration</a></h4>
               <p>Assistance in registering your new business with the DTI, BIR and Mayor's Office</p>
             </div>
           </div>

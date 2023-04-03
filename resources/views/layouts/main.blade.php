@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Company Bootstrap Template - Index</title>
+  <title>Oropeza BPO Services | Business Process Outsourcing | Accounting | Tax | Payroll</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -47,10 +47,12 @@
         <ul>
           <li><a href="/" class="active">Home</a></li>
 
-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="/about"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="team.html">Team</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/about/#team">Team</a></li>
+
+              <!--
               <li><a href="testimonials.html">Testimonials</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -61,14 +63,20 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li>
+              -->
+
             </ul>
           </li>
 
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/#services">Services</a></li>
+
+          <!--
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          -->
+
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -105,7 +113,7 @@
               Philippines <br><br>
               <strong>Phone (TNT):</strong> <a href="tel:+639303262486">+63&nbsp;930&nbsp;326&nbsp;2486</a><br>
               <strong>Phone (Globe):</strong> <a href="tel:+639452947945">+63&nbsp;945&nbsp;294&nbsp;7945</a><br>
-              <strong>Email:</strong> OropezaBPO@gmail.com<br>
+              <strong>Email:</strong> <a href="mailto:oropezabpo@gmail.com">OropezaBPO@gmail.com</a><br>
             </p>
           </div>
 
@@ -113,29 +121,39 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/about">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/blog">Blog</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/contact">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tax Filing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Accounting</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Payroll</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Digital Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#services">Tax Filing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#services">Accounting</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#services">Payroll</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#services">Digital Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/#services">Web Design</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>Receive business insights towards profitability and sustainability</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form enctype="multipart/form-data" action="/subscribe" method="post">
+              @csrf
+              @if ($errors->any())
+                <div class="alert alert-danger">
+                  <ul>
+                    @foreach ($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                    @endforeach
+                  </ul>
+                </div>
+              @endif
+              <input type="email" name="email_address"><input type="submit" value="Subscribe">
             </form>
           </div>
 

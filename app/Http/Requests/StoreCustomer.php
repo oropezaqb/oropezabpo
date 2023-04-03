@@ -24,7 +24,6 @@ class StoreCustomer extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required'],
             'email_address' => ['required', 'email:rfc,dns']
         ];
     }
