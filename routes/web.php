@@ -6,6 +6,7 @@ use App\Http\Controllers\ListingController;
 use App\Http\Controllers\PublishedListingController;
 use App\Http\Controllers\FreeBookController;
 use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +49,7 @@ Route::post('/listings/unpublish', [ListingController::class, 'unpublish'])->nam
 Route::post('/free-book/get', [FreeBookController::class, 'store'])->name('free-book.store');
 Route::post('/free-book/download', [FreeBookController::class, 'download'])->name('free-book.download');
 Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe.store');
+Route::post('/contact', [MessageController::class, 'store'])->name('contact.store');
 Route::resource('listings', ListingController::class);
 
 Route::group(['prefix' => 'admin'], function () {
