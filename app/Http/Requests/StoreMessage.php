@@ -24,7 +24,10 @@ class StoreMessage extends FormRequest
     public function rules()
     {
         return [
-
+            'name' => ['required'],
+            'email' => ['required', 'email:rfc,dns'],
+            'subject' => ['required'],
+            'message' => ['required'],
         ];
     }
 }

@@ -4,6 +4,8 @@
 
 @section('content')
 
+  <link rel="canonical" href="http://oropezabpo.com/about"/>
+
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->

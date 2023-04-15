@@ -1,8 +1,10 @@
 @extends('layouts.main')
 
-@section('title', 'Bien Oropeza | Oropeza Business Process Outsourcing Services | Accounting | Tax | Payroll')
+@section('title', 'Oropeza BPO, Accountant, Bookkeeper, CPA | Get an Accountant')
 
 @section('content')
+
+  <link rel="canonical" href="http://oropezabpo.com"/>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -15,7 +17,7 @@
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Welcome to <span>Oropeza BPO Services</span></h2>
-              <p>We are a BPO company based in Makati City, Philippines providing Tax Compliance, Accounting, Payroll, Social Media and Digital Marketing, Web Design and Development, Search Engine Optimization (SEO) and New Business Registration with DTI and BIR.</p>
+              <p>We are a BPO company based in Fort Legend Tower, BGC, Taguig City, Philippines providing Tax Compliance, Accounting, Payroll, Social Media and Digital Marketing, Web Design and Development, Search Engine Optimization (SEO) and New Business Registration with DTI and BIR.</p>
               <div class="text-center"><a href="https://calendly.com/oropezabpo/30min" class="btn-get-started">Book Now</a></div>
             </div>
           </div>

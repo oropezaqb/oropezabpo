@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Oropeza BPO Services | Business Process Outsourcing | Accounting | Tax | Payroll</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>@yield('title')</title>
+  <meta name="description" content="Oropeza BPO is a company in the Philippines providing accounting, tax, payroll, marketing, web design & business registration services. Get an accountant, bookeeper or CPA. Hire an accountant, bookkeeper or CPA in Manila, Taguig & Makati City.">
+  <meta name="keywords" content"accountant,bookkeeper,cpa,philippine taxation,consulting,accounting firm,corporate finance,client accounting,bookkeeping,accounting firm philippines,consulting firm philippines,tax firm philippines,strategy & transactions firm philippines,accountant,bookkeeper,cpa">
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
@@ -77,17 +77,19 @@
 
           <li><a href="/blog">Blog</a></li>
           <li><a href="/contact">Contact</a></li>
-
+          <li><a style="background-color:#1bbd36;color:white;padding:8px 20px;margin-left:30px;border-radius:50px;font-size:14px;border:2px solid;font-weight:600;" href="https://calendly.com/oropezabpo/30min">Book Now</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
+      <!--
       <div class="header-social-links d-flex">
         <a href="https://twitter.com/OropezaBPO" class="twitter"><i class="bu bi-twitter"></i></a>
         <a href="https://facebook.com/OropezaBPO" class="facebook"><i class="bu bi-facebook"></i></a>
         <a href="https://instagram.com/OropezaBPO" class="instagram"><i class="bu bi-instagram"></i></a>
-        <!-- <a href="https://linkedin.com/in/bienoropeza" class="linkedin"><i class="bu bi-linkedin"></i></i></a> -->
+        <a href="https://linkedin.com/in/bienoropeza" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
       </div>
+      -->
 
     </div>
   </header><!-- End Header -->
@@ -108,9 +110,10 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Oropeza BPO</h3>
             <p>
-              2990 Balabac Street <br>
-              Pinagkaisahan, Makati<br>
-              Philippines <br><br>
+              10-01 Fort Legend Tower<br>
+              31st St. corner 3rd Ave.<br>
+              Bonifacio Global City<br>
+              Taguig City, Philippines <br><br>
               <strong>Phone (TNT):</strong> <a href="tel:+639303262486">+63&nbsp;930&nbsp;326&nbsp;2486</a><br>
               <strong>Phone (Globe):</strong> <a href="tel:+639452947945">+63&nbsp;945&nbsp;294&nbsp;7945</a><br>
               <strong>Email:</strong> <a href="mailto:oropezabpo@gmail.com">OropezaBPO@gmail.com</a><br>
